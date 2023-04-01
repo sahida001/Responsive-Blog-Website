@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PHP blog website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <header class="main_header">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column py-5"
+      >
+        <h1 class="text-uppercase main_heading">Learn PHP</h1>
+        <p class="main_heading__para">
+          Welcome to my
+          <span class="text-capitalize bg-dark text-white py-2 px-3">
+            world of blog</span
+          >
+        </p>
+      </div>
+      <!-- //the main image -->
+      <div
+        class="main_header__div d-flex align-items-start justify-content-center flex-column shadow pl-5"
+      >
+        <p>LEARN PHP WITH BLOG POST</p>
+        <!-- <h2 class="text-uppercase">the Progammer guy</h2> -->
+        <h2 class="animateWord">
+          <span>She is</span>
+          <div>
+            <!--Use classes 2,3, or 4 to match the number of words -->
+            <ul class="flip4">
+              <li>a Progammer</li>
+              <li>a web developer</li>
+              <li>a web designer</li>
+              <li>a graphic designer</li>
+            </ul>
+          </div>
+        </h2>
+        <button class="text-uppercase">subscribe</button>
+      </div>
+    </header>
+    <!-- header ends -->
+    <!-- two sided blog part starts -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-10 col-md-12 col-11 mx-auto my-5">
+          <div class="row gx-5 mx-sm-auto">
+            <div class="col-lg-8 col-md-11 col-11 mx-auto">
+              <div class="row gy-5">
+                <div class="col-12 card p-4 shadow blog_left__div">
+                  <div
+                    class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5"
+                  >
+                    <h1 class="text-uppercase">PHP in 2023</h1>
+                    <p class="blog_title">
+                      <span class="font-weight-bold"> PHP Introduction, </span>
+                      Jan 12, 2023
+                    </p>
+                  </div>
+                  <figure class="right_side_img mb-5">
+                    <img
+                      src="https://intellipaat.com/blog/wp-content/uploads/2023/02/Functions-Syntax-and-Uses.png" class="img-fluid shadow" 
+                    />
+                  </figure>
+                  <p>
+                    <span class="font-weight-bold">PHP is a widely used server-side scripting language that has been around since the mid-1990s. It powers a large portion of the web, including popular content management systems like WordPress and Drupal.
+
+                    In recent years, PHP has continued to evolve with the release of PHP 7, which introduced significant performance improvements and new features such as type declarations, anonymous classes, and improved error handling. PHP 8, released in November 2020, brought even more improvements and new features such as just-in-time compilation, union types, and attributes.
+                  </p>
+                  <p>
+                    PHP Syntax:
+
+                    PHP code is typically embedded in HTML markup and enclosed within <?php and ?> tags. 
+
+                    The PHP code is enclosed within <?php and ?> tags, and the echo statement outputs a string that includes the current date and time, which is generated using the date() function.
+                  </p>
+                  <div class="d-flex justify-content-between left_div_btns">
+                    <div>
+                      <button class="left_div__like" id="like_btn">
+                        <i class="fa fa-thumbs-up"></i>Like
+                      </button>
+                    </div>
+                    <div>
+                      <button class="left_div__reply" onclick="reply('reply1')">
+                        Replies <badge class="bg-white text-dark p-2">1</badge>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="replies" id="reply1">
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-self-center">
+                        <img
+                          src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png"
+                        />
+                      </div>
+                      <div class="reply_text__left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Smrity, </span> Jan 12,
+                          2023, 7:20 PM
+                        </p>
+                        <p>Awesome, I love your content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2nd topic  -->
+                <div class="col-12 card p-4 shadow blog_left__div">
+                  <div
+                    class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5"
+                  >
+                    <h1 class="text-uppercase">PHP Syntax And datatype</h1>
+                    <p class="blog_title">
+                      <span class="font-weight-bold"> Syntax And datatype, </span>
+                      Jan 12, 2023
+                    </p>
+                  </div>
+                  <figure class="right_side_img mb-5">
+                    <img
+                      src="https://intellipaat.com/blog/wp-content/uploads/2023/02/image-98.png"
+                      class="img-fluid shadow"
+                    />
+                  </figure>
+                  <p>
+                    <span class="font-weight-bold">PHP is a server-side scripting language that is used to build dynamic web applications. PHP code can be embedded directly into HTML code, making it easy to mix PHP code and HTML markup. The PHP syntax is similar to that of other programming languages, with statements separated by semicolons, variables assigned with the equals sign, and conditional and looping constructs.
+                  </p>
+                  <p>PHP Datatype:</p>
+                  <p>
+                    PHP supports several data types, including:
+
+                      String: A sequence of characters, such as text, enclosed in single or double quotes.<br>
+                      Integer: A whole number, either positive or negative, with no decimal point.<br>
+                      Float: A number with a decimal point, also called a floating-point number.<br>
+                      Boolean: A value that is either true or false.<br>
+                      Array: An ordered collection of values, with each value accessed by an index.<br>
+                      Object: A complex data type that contains data and methods, with properties accessed using the arrow (->) operator.<br>
+                      In PHP, variables do not need to be declared before use, and their data type is determined dynamically based on the value assigned to them. Additionally, PHP supports typecasting, which allows you to convert a variable from one data type to another.<br>
+                  </p>
+                  <div class="d-flex justify-content-between left_div_btns">
+                    <div>
+                      <button class="left_div__like" id="like_btn">
+                        <i class="fa fa-thumbs-up"></i>Like
+                      </button>
+                    </div>
+                    <div>
+                      <button class="left_div__reply" onclick="reply('reply2')">
+                        Replies <badge class="bg-white text-dark p-2">2</badge>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="replies" id="reply2">
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-self-center">
+                        <img
+                          src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png"
+                        />
+                      </div>
+                      <div class="reply_text__left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Sahida, </span> Jan 11,
+                          2023, 7:20 PM
+                        </p>
+                        <p>I really like the way you teach. Subscribed :)</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-self-center">
+                        <img
+                          src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png"
+                        />
+                      </div>
+                      <div class="reply_text__left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Smrity, </span> Jan 12,
+                          2023, 7:20 PM
+                        </p>
+                        <p>Awesome, I love your content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3rd topic -->
+                <div class="col-12 card p-4 shadow blog_left__div">
+                  <div
+                    class="d-flex justify-content-center align-items-center flex-column pt-3 pb-5"
+                  >
+                    <h1 class="text-uppercase">PHP Variables and Operators</h1>
+                    <p class="blog_title">
+                      <span class="font-weight-bold"> Variables and Operators, </span>
+                      Jan 12, 2023
+                    </p>
+                  </div>
+                  <figure class="right_side_img mb-5">
+                    <img
+                      src="https://www.techfry.com/images/articles/php/php-operators.jpg"
+                      class="img-fluid shadow"
+                    />
+                  </figure>
+                  
+                  
+                  <p class="font-weight-bold">PHP Variables</p>
+                  <p>
+                    <span class="font-weight-bold">
+                     
+                      In PHP, a variable is used to store a value or a reference to a value. Variables in PHP are case-sensitive and can start with a letter or an underscore, followed by any combination of letters, numbers, or underscores. PHP variables do not need to be declared before use, and their data type is determined dynamically based on the value assigned to them.
+                  </p>
+                  <p>PHP Operators</p>
+                  <p>
+                    Arithmetic operators: These operators are used to perform mathematical operations, such as addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).<br>
+                    Assignment operators: These operators are used to assign a value to a variable, such as the equals sign (=), as well as shorthand operators such as +=, -=, *=, and /=.<br>
+                    Comparison operators: These operators are used to compare values, such as equal to (==), not equal to (!=), greater than (>), less than (<), greater than or equal to (>=), and less than or equal to (<=).<br>
+                    Logical operators: These operators are used to combine or negate conditions, such as AND (&&), OR (||), and NOT (!).<br>
+                    String operators: These operators are used to concatenate strings, such as the period (.) operator.<br>
+                    Increment and decrement operators: These operators are used to increment or decrement a variable by one, such as the increment operator (++), and the decrement operator (--).<br>
+                    Ternary operator: This operator is a shorthand for if-else statements and is used to evaluate a condition and return one of two values based on the result.<br>
+                    In PHP, operators are evaluated based on their precedence, which determines the order in which operators are executed in an expression. Parentheses can be used to override the default precedence and ensure that operators are evaluated in the correct order.<br>
+                  </p>
+                  <div class="d-flex justify-content-between left_div_btns">
+                    <div>
+                      <button class="left_div__like" id="like_btn">
+                        <i class="fa fa-thumbs-up"></i>Like
+                      </button>
+                    </div>
+                    <div>
+                      <button class="left_div__reply" onclick="reply('reply3')">
+                        Replies <badge class="bg-white text-dark p-2">4</badge>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="replies" id="reply3">
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-self-center">
+                        <img
+                          src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png"
+                        />
+                      </div>
+                      <div class="reply_text__left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Sahida Smrity, </span> Jan 12,
+                          2023, 7:20 PM
+                        </p>
+                        <p>Awesome, I love your content.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-self-center">
+                        <img
+                          src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png"
+                        />
+                      </div>
+                      <div class="reply_text__left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold">
+                            Hira,
+                          </span>
+                          Jan 12, 2023, 7:20 PM
+                        </p>
+                        <p>Awesome, I love your content.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-self-center">
+                        <img
+                          src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png"
+                        />
+                      </div>
+                      <div class="reply_text__left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Sam, </span> Jan 12,
+                          2023, 7:20 PM
+                        </p>
+                        <p>Awesome, I love your content.</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-start flex-row align-items-center card reply_card py-3"
+                    >
+                      <div class="reply_img mx-2 align-self-center">
+                        <img
+                          src="https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png"
+                        />
+                      </div>
+                      <div class="reply_text__left">
+                        <p class="blog_title">
+                          <span class="font-weight-bold"> Mickel, </span> Jan 12,
+                          2023, 7:20 PM
+                        </p>
+                        <p>Awesome, I love your content.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  right side of the div-->
+            <div
+              class="col-lg-3 col-md-7 col-11 justify-content-end m-lg-0 m-auto"
+            >
+              <div class="row gy-5 left_div__blog">
+                <!-- about me -->
+                <div class="col-12 about_me_div shadow">
+                  <p class="font-weight-bold">Sahida Akter</p>
+                  <p>
+                    A multidisciplinary, hard-working artist who is still well driven and coordinated.I am a dependable person who puts 100% effort into the work and understand the value of accountability. 
+                  </p>
+                </div>
+                <!-- popular post -->
+                <div class="popular_post">
+                  <div class="right_div__title py-4 pl-2">
+                    <h2>Popular Posts</h2>
+                  </div>
+                  <div class="right_sub__div shadow">
+                    <div class="row">
+                      <div class="col-3 popular_post__img1 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h3>Bill Gates</h3>
+                        <p class="text-capitalize">CEO Microsoft</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3 popular_post__img2 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h3>Mark Zuckerberg</h3>
+                        <p class="text-capitalize">Programmer</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3 popular_post__img3 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h3>Jeff Bezos</h3>
+                        <p class="text-capitalize">Amazon</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3 popular_post__img4 py-2 pl-2"></div>
+                      <div class="col-9">
+                        <h3>Steve Jobs</h3>
+                        <p class="text-capitalize">Apple</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- advertise -->
+                <div class="right_div_post">
+                  <div class="right_div__title py-4 pl-2">
+                    <h2>Advertise</h2>
+                  </div>
+                  <div class="right_sub__div">
+                    <div class="adevetise_img bg-light shadow">
+                      <p>Ads goes here</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- tags -->
+                <div class="right_div_post">
+                  <div class="right_div__title py-4 pl-2">
+                    <h2>Tags</h2>
+                  </div>
+                  <div class="tags_main right_sub__div">
+                    <a
+                    href="#" class="badge shadow text-capitalize""
+                    >
+                      html
+                    </a>
+                    <a href="#" class="badge shadow text-capitalize"> css </a>
+                    <a href="#" class="badge shadow text-capitalize"> js </a>
+                    <a href="#" class="badge shadow text-capitalize"> react </a>
+                    <a href="#" class="badge shadow text-capitalize"> vue </a>
+                    <a href="#" class="badge shadow text-capitalize"> php </a>
+                    <a href="#" class="badge shadow text-capitalize">
+                      python
+                    </a>
+                    <a href="#" class="badge shadow text-capitalize">
+                      kotlin
+                    </a>
+                    <a href="#" class="badge shadow text-capitalize"> c++ </a>
+                    <a href="#" class="badge shadow text-capitalize"> java </a>
+                  </div>
+                </div>
+                <!-- Inspiration -->
+                <div class="right_div_post">
+                  <div class="right_div__title py-4 pl-2">
+                    <h2>Inspiration</h2>
+                  </div>
+                  <div class="right_sub__div">
+                    <div class="row gx-3">
+                      <div class="col-6">
+                        <figure>
+                          <img
+                            src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            class="img-fluid shadow"
+                          />
+                        </figure>
+                      </div>
+                      <div class="col-6">
+                        <figure>
+                          <img
+                            src="https://images.pexels.com/photos/34140/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            class="img-fluid shadow"
+                          />
+                        </figure>
+                      </div>
+                      <div class="col-6">
+                        <figure>
+                          <img
+                            src="https://images.pexels.com/photos/38547/office-freelancer-computer-business-38547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            class="img-fluid shadow"
+                          />
+                        </figure>
+                      </div>
+                      <div class="col-6">
+                        <figure>
+                          <img
+                            src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                            class="img-fluid shadow"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Follow Me -->
+                <div class="right_div_post">
+                  <div class="right_div__title py-4 pl-2">
+                    <h2>Follow Me</h2>
+                  </div>
+                  <div class="right_sub__div d-flex justify-content-around">
+                    <a href="#">
+                      <i class="fab fa-facebook-square fa-3x"></i
+                    ></a>
+                    <a
+                      href="#"
+                    >
+                      <i class="fab fa-3x fa-linkedin"></i
+                    ></a>
+                    <a href="#"> <i class="fab fa-3x fa-github-square"></i> </a>
+                    <a href="#"> <i class="fab fa-3x fa-twitter-square"></i></a>
+                    <a href="#">
+                      <i class="fab fa-3x fa-youtube-square"></i>
+                    </a>
+                   
+                  </div>
+                </div>
+                <!-- Subscribe -->
+                <div class="right_div_post">
+                  <div class="right_div__title py-4 pl-2">
+                    <h2>Subscribe</h2>
+                  </div>
+                  <div class="right_sub__div">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >Enter your e-mail below and get notified on the
+                          latest blog posts.</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control mt-2"
+                          id="exampleFormControlInput1"
+                          placeholder="name@example.com"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <button class="subs_btn d-block" type="submit">
+                          Subscribe
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="text-center py-5 bg-light">
+        design with love By ©Mst. Sahida Akter
+      </p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      const like = document.getElementById("like_btn");
+      const singleClick = () => {
+        like.style.fontWeight = "bold";
+        like.style.background = "#bbe1fa";
+        like.style.color = "#1b262c";
+        like.innerHTML = "✓ Liked";
+      };
+      const doubleClick = () => {
+        like.style.fontWeight = "normal";
+        like.style.background = "#3282b8";
+        like.style.color = "#fff";
+        like.innerHTML = "Like";
+      };
+      var clickCount = 0;
+      like.addEventListener(
+        "click",
+        function () {
+          clickCount++;
+          if (clickCount === 1) {
+            singleClickTimer = setTimeout(function () {
+              clickCount = 0;
+              singleClick();
+            }, 400);
+          } else if (clickCount === 2) {
+            clearTimeout(singleClickTimer);
+            clickCount = 0;
+            doubleClick();
+          }
+        },
+        false
+      );
+      // show and hide the replies
+      const reply = (rep) => {
+        console.log("hi");
+        // debugger;
+        var res = document.getElementById(rep);
+        console.log(res);
+        if (res.className == "replies") {
+          res.className = "thapa_show";
+          res.style.WebkitTransition = "all 0.3s ease";
+          // res.style.transition = 'all 0.3s ease';
+          // console.log(thapa_show);
+        } else if (res.className == "thapa_show") {
+          // res.className = " ";
+          console.log("thapa show");
+          res.className = "replies";
+        }
+      };
+    </script>
+  </body>
+</html>
